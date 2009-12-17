@@ -1,16 +1,49 @@
 Copyright 2009 Steven C Jackson
 This software is licensed under the GNU GPLv3
-Ubuntu Initial Items GUI
 
-DESCRIPTION:
-Because of all the great response from the simple shell script, I've created a GUI using Zenity and Bash so that people new to the CLI or those who wish to select and deselect what packages to install or uninstall may do so. You'll be able to play DVDs, listen to your MP3s, have 5.1 Surround Sound playback enabled and more. This isn't a 'how-to' but rather a 'just-do-it'. If you want to know the how-to, just view the source of the script. It's basically doing some simple apt-gets with a GUI front-end.
+SOFTWARE NAME
+Initial Install Tasks for Ubuntu (IITU)
 
-You may need to extract it (tar xvf ubuntuTasks.sh.tar.gz) then make sure it's executable (chmod +x ubuntuTasks.sh) and execute it (./ubuntuTasks.sh). You'll be greeted with a user-friendly GUI where you can select and deselect items.
+VERSION
+0.3
 
-USAGE:
-extract the file if compressed then cd to the directory you extracted it to.
-from the cli type:
+COPYING / LICENSE
+This software is licensed under the GNU GPLv3 which may be found in the root directory of this program or at http://www.gnu.org/licenses/gpl.html
 
-chmod +x ubuntuTasks.sh
-./ubuntuTasks.sh 
+INSTALLATION
+Extract the archive file
+Set the ubuntuTasks.sh to be excutable
 
+USAGE
+Execute the ubuntuTasks.sh script as a user with root privileges
+Check the items to install or remove
+Uncheck items to not install or keep
+Press ok
+
+*The system may prompt you for a a user password if not authenticated as being able to install items
+
+EXAMPLE
+tar xzf ubuntuTasks.sh.tar.gz
+./ubuntuTasks.sh
+
+NEWS
+Please let me know about any changes you would like or software additions to the checkboxes.
+Of course, this is GPL'd so feel free to extend it and share it. 
+It would be most beneficial to receive back the contributions so that I may merge them into the main branch.
+ 
+CHANGELOG
+v0.1	initial creation
+v0.2	GUI creation via zenity
+v0.3	Added Git
+
+AUTHORS
+Steven C Jackson
+
+CONTACT
+scjackson@linux.com, http://coderswasteland.com
+
+THANKS
+As always, a big thanks the the free/libre open source software developers and community
+
+KNOWN BUGS
+IITU may encounter hang-up at the end if prompted to 'autoremove' via apt-get. This isn't related to IITU but is something I need to try to avoid.
