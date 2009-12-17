@@ -1,5 +1,5 @@
 #!/bin/bash
-ans=$(zenity  --list  --width=350 --height=400 --text "Initial Ubuntu Tasks" --checklist  --column "Select" --column "Options" TRUE "Uninstall Mono" TRUE "Install SBackup" TRUE "Install Restricted Extras & Codecs" TRUE "Install MS Core Fonts" TRUE "Install FileZilla FTP" TRUE "Install Wine" TRUE "Install VLC Media Player" TRUE "Install K3B" TRUE "Enable 5.1 Surround Sound" --separator=":");
+ans=$(zenity  --list  --width=350 --height=400 --text "Initial Ubuntu Tasks" --checklist  --column "Select" --column "Options" TRUE "Uninstall Mono" TRUE "Install SBackup" TRUE "Install Restricted Extras & Codecs" TRUE "Install MS Core Fonts" TRUE "Install FileZilla FTP" TRUE "Install Wine" TRUE "Install VLC Media Player" TRUE "Install K3B" TRUE "Install Git" TRUE "Enable 5.1 Surround Sound" --separator=":");
 
 arr=$(echo $ans | tr "\:" "\n")
 
@@ -60,6 +60,13 @@ do
 		echo "Installing FileZilla FTP"
 		echo "=================================================="
 		sudo apt-get -y install filezilla
+	fi
+	if [ $x = "Git" ]
+	then
+		echo "=================================================="
+		echo "Installing Git Version Control System"
+		echo "=================================================="
+		sudo apt-get -y install git-core
 	fi
 	if [ $x = "Sound" ]
 	then
