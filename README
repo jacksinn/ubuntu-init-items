@@ -1,3 +1,16 @@
 Copyright 2009 Steven C Jackson
 This software is licensed under the GNU GPLv3
+Ubuntu Initial Items GUI
+
+DESCRIPTION:
+Because of all the great response from the simple shell script, I've created a GUI using Zenity and Bash so that people new to the CLI or those who wish to select and deselect what packages to install or uninstall may do so. You'll be able to play DVDs, listen to your MP3s, have 5.1 Surround Sound playback enabled and more. This isn't a 'how-to' but rather a 'just-do-it'. If you want to know the how-to, just view the source of the script. It's basically doing some simple apt-gets with a GUI front-end.
+
+You may need to extract it (tar xvf ubuntuTasks.sh.tar.gz) then make sure it's executable (chmod +x ubuntuTasks.sh) and execute it (./ubuntuTasks.sh). You'll be greeted with a user-friendly GUI where you can select and deselect items.
+
+USAGE:
+extract the file if compressed then cd to the directory you extracted it to.
+from the cli type:
+
+chmod +x ubuntuTasks.sh
+./ubuntuTasks.sh 
 
